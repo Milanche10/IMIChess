@@ -1,0 +1,177 @@
+[
+    {
+      "name": "Chess Basics: The Opening",
+      "description": "Learn the fundamental concepts of chess openings.",
+      "complexityLevel": "Beginner",
+      "numberOfSublessons": 3,
+      "shortDescription": "Introduction to chess openings.",
+      "sublessons": [
+        {
+          "title": "Lesson 1: The Importance of Openings",
+          "description": "Understand why chess openings are essential and how they set the stage for the rest of the game.",
+          "duration": "15 minutes",
+          "url": "https://www.chess.com/lessons/guide/opening-importance"
+        },
+        {
+          "title": "Lesson 2: Key Opening Principles",
+          "description": "Learn the key principles of chess openings, such as controlling the center and developing your pieces.",
+          "duration": "20 minutes",
+          "url": "https://www.chess.com/lessons/guide/key-opening-principles"
+        },
+        {
+          "title": "Lesson 3: Popular Opening Systems",
+          "description": "Explore some of the most popular opening systems in chess, including the Ruy Lopez and Sicilian Defense.",
+          "duration": "30 minutes",
+          "url": "https://www.chess.com/lessons/guide/popular-opening-systems"
+        }
+      ]
+    },
+    {
+        "name": "Chess Tactics: Forks and Pins",
+        "description": "Master the art of using forks and pins to gain an advantage in chess.",
+        "complexityLevel": "Intermediate",
+        "numberOfSublessons": 3,
+        "shortDescription": "Explore chess tactics.",
+        "sublessons": [
+          {
+            "title": "Lesson 1: Forks",
+            "description": "Learn how to execute chess forks and create double threats.",
+            "duration": "20 minutes",
+            "url": "https://www.chess.com/lessons/guide/chess-forks"
+          },
+          {
+            "title": "Lesson 2: Pins",
+            "description": "Understand the concept of pins and how to use them to immobilize your opponent's pieces.",
+            "duration": "25 minutes",
+            "url": "https://www.chess.com/lessons/guide/chess-pins"
+          },
+          {
+            "title": "Lesson 3: Skewers",
+            "description": "Explore the tactics of skewers and how to exploit the vulnerability of your opponent's pieces.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/chess-skewers"
+          }
+        ]
+      },
+      {
+        "name": "Endgame Strategies: King and Pawn Endings",
+        "description": "Gain expertise in handling king and pawn endings to secure victory in endgame scenarios.",
+        "complexityLevel": "Intermediate",
+        "numberOfSublessons": 4,
+        "shortDescription": "Master king and pawn endgames.",
+        "sublessons": [
+          {
+            "title": "Lesson 1: Basic King and Pawn Endings",
+            "description": "Learn the fundamental principles of king and pawn endings.",
+            "duration": "20 minutes",
+            "url": "https://www.chess.com/lessons/guide/king-and-pawn-endings-basics"
+          },
+          {
+            "title": "Lesson 2: Opposition and Square of the Pawn",
+            "description": "Understand the importance of opposition and the concept of the square of the pawn.",
+            "duration": "25 minutes",
+            "url": "https://www.chess.com/lessons/guide/opposition-and-square-of-the-pawn"
+          },
+          {
+            "title": "Lesson 3: Pawn Promotion Techniques",
+            "description": "Explore various techniques for promoting pawns and achieving victory in endgame scenarios.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/pawn-promotion-techniques"
+          },
+          {
+            "title": "Lesson 4: Zugzwang in King and Pawn Endings",
+            "description": "Learn how to use zugzwang to your advantage in king and pawn endings.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/zugzwang-in-king-and-pawn-endings"
+          }
+        ]
+      },
+      {
+        "name": "Chess Openings: The Sicilian Defense",
+        "description": "Explore one of the most popular chess openings, the Sicilian Defense.",
+        "complexityLevel": "Intermediate",
+        "numberOfSublessons": 3,
+        "shortDescription": "Master the Sicilian Defense.",
+        "sublessons": [
+          {
+            "title": "Lesson 1: Introduction to the Sicilian Defense",
+            "description": "Learn the basics of the Sicilian Defense and its strategic goals.",
+            "duration": "20 minutes",
+            "url": "https://www.chess.com/lessons/guide/sicilian-defense-introduction"
+          },
+          {
+            "title": "Lesson 2: Sicilian Najdorf Variation",
+            "description": "Explore the Najdorf Variation, one of the most complex and aggressive lines of the Sicilian Defense.",
+            "duration": "25 minutes",
+            "url": "https://www.chess.com/lessons/guide/sicilian-najdorf-variation"
+          },
+          {
+            "title": "Lesson 3: Sicilian Dragon Variation",
+            "description": "Learn about the Dragon Variation, known for its sharp and tactical nature.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/sicilian-dragon-variation"
+          }
+        ]
+      },
+      {
+        "name": "Chess Strategy: The Center Control",
+        "description": "Master the art of controlling the center of the chessboard to gain a strategic advantage.",
+        "complexityLevel": "Intermediate",
+        "numberOfSublessons": 4,
+        "shortDescription": "Strategic center control in chess.",
+        "sublessons": [
+          {
+            "title": "Lesson 1: Importance of Center Control",
+            "description": "Understand why controlling the center is crucial for a successful chess strategy.",
+            "duration": "20 minutes",
+            "url": "https://www.chess.com/lessons/guide/center-control-importance"
+          },
+          {
+            "title": "Lesson 2: Open and Closed Centers",
+            "description": "Learn the differences between open and closed center positions and their strategic implications.",
+            "duration": "25 minutes",
+            "url": "https://www.chess.com/lessons/guide/open-and-closed-centers"
+          },
+          {
+            "title": "Lesson 3: Pawn Structures in the Center",
+            "description": "Explore common pawn structures that arise from center control and their strategic significance.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/pawn-structures-in-the-center"
+          },
+          {
+            "title": "Lesson 4: Center Control in Opening Repertoire",
+            "description": "Learn how to incorporate center control strategies into your opening repertoire.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/center-control-in-opening-repertoire"
+          }
+        ]
+      },
+      {
+        "name": "Endgame Mastery: Rook Endgames",
+        "description": "Master the intricate world of rook endgames and secure victory in complex endgame scenarios.",
+        "complexityLevel": "Advanced",
+        "numberOfSublessons": 3,
+        "shortDescription": "Rook endgame tactics and strategies.",
+        "sublessons": [
+          {
+            "title": "Lesson 1: Rook Endgames Basics",
+            "description": "Learn the foundational concepts and strategies for rook endgames.",
+            "duration": "20 minutes",
+            "url": "https://www.chess.com/lessons/guide/rook-endgames-basics"
+          },
+          {
+            "title": "Lesson 2: Lucena Position and Philidor Position",
+            "description": "Master the Lucena and Philidor positions, critical for winning rook endgames.",
+            "duration": "25 minutes",
+            "url": "https://www.chess.com/lessons/guide/lucena-and-philidor-positions"
+          },
+          {
+            "title": "Lesson 3: Rook and Pawn vs. Rook",
+            "description": "Explore the complexities of rook and pawn versus rook endgames and winning techniques.",
+            "duration": "30 minutes",
+            "url": "https://www.chess.com/lessons/guide/rook-and-pawn-vs-rook-endgames"
+          }
+        ]
+      }
+  ]
+  

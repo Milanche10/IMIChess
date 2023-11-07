@@ -1,0 +1,57 @@
+/* Styles for the lesson list container */
+.lesson-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4%;
+  }
+  
+  /* Styles for each individual lesson item */
+  .lesson-item {
+    width: calc(33.33% - 20px); /* Adjust the width as needed for your layout */
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    background-color: #232325;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the lesson image */
+  .lesson-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Styles for lesson details */
+  .lesson-details {
+    margin-top: 10px;
+  }
+  
+  /* Styles for lesson title */
+  .lesson-details h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Styles for short description */
+  .lesson-details p {
+    margin: 5px 0;
+    color: #777;
+  }
+  
+  /* Styles for number of sublessons and complexity level */
+  .lesson-details p:nth-child(3),
+  .lesson-details p:nth-child(4) {
+    font-weight: bold;
+  }
+  
+  /* Styles for complexity level icon */
+  .chesspiece-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  

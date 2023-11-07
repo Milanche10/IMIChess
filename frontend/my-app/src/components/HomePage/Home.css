@@ -1,0 +1,312 @@
+
+.textBox h1{
+  color: white;
+  font-size: 30px;
+}
+.textBox p{
+  color: white;
+  font-size: 20px;
+}
+
+
+/* Define custom properties for the target numbers of each counter */
+#counterToday {
+    --target-num: 165244; /* Specify the target number for this counter */
+  }
+  
+  #counterCurrent {
+    --target-num: 368; /* Specify the target number for this counter */
+  }
+  
+  /* Define a custom property for the current count */
+  @property --num {
+    syntax: '<integer>';
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  /* Apply an animation to increment the custom property */
+  .counter {
+    color: white;
+    animation: count-up 5s linear forwards;
+    counter-reset: num var(--num);
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes count-up {
+    from {
+      --num: 0; /* Start counting from 0 */
+    }
+    to {
+      /* End counting at the desired target number (specified in the respective custom properties) */
+      --num: var(--target-num);
+    }
+  }
+  
+  /* Display the counter value */
+  .counter::after {
+    content: counter(num);
+  }
+  
+
+
+
+.OnlineButton {
+    --clr: #39FF14;
+
+}
+  .AIButton {
+    --clr: #FF44CC;
+
+}
+  .LessionButton {
+    --clr: #0FF0FC;
+
+}
+  .InfoButton {
+    --clr: #E7EE4F;
+
+}
+  .PuzzleButton{
+    --clr: #EA8E20;
+  }
+
+
+  
+  .HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #27272c;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 4%;
+    width: 100%;
+  }
+
+  .PlayBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    
+  }
+  .LessionBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #232325 ;
+    justify-content: center;
+  }
+  .InfoBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #232325 ;
+    justify-content: center;
+  }
+  .quote-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    align-self: end; /* Move the quote-container to the bottom */
+  }
+  .imageBox .textBox{
+    border: 1px solid #000;
+    padding: 10px;
+  }
+  .imageBox img{
+    width: 90%;
+    height: 90%; 
+  }
+  .image-qoute-box .qoute-box{
+    border: 1px solid #000;
+    margin: 10px;
+  }
+  .LessionBox .image-qoute-box img{
+    width: 250px;
+    height: 350px;
+  }
+  .InfoBox .image-qoute-box img{
+    width: 90%;
+    height: 90%;
+  }
+
+  
+
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if they don't fit horizontally */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  }
+  .counter-container{
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if they don't fit horizontally */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 1rem;
+  }
+  
+  /* CSS for button styles using class names */
+.LessionButton,
+.AIButton,
+.PuzzleButton,
+.OnlineButton,
+.InfoButton {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 3rem; /* Adjust the padding to set the desired size */
+  transition: 0.2s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.LessionButton:hover,
+.AIButton:hover,
+.PuzzleButton:hover,
+.OnlineButton:hover,
+.InfoButton:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+}
+
+.LessionButton::before,
+.PuzzleButton::before,
+.AIButton::before,
+.OnlineButton::before,
+.InfoButton::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+.LessionButton span,
+.AIButton span,
+.PuzzleButton span,
+.OnlineButton span,
+.InfoButton span {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.LessionButton i,
+.AIButton i,
+.PuzzleButton i,
+.OnlineButton i,
+.InfoButton i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.LessionButton i::before,
+.AIButton i::before,
+.PuzzleButton i::before,
+.OnlineButton i::before,
+.InfoButton i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.LessionButton:hover i::before,
+.AIButton:hover i::before,
+.PuzzleButton:hover i::before,
+.OnlineButton:hover i::before,
+.InfoButton:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.LessionButton i::after,
+.AIButton i::after,
+.PuzzleButton i::after,
+.OnlineButton i::after,
+.InfoButton i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.LessionButton:hover i::after,
+.AIButton:hover i::after,
+.PuzzleButton:hover i::after,
+.OnlineButton:hover i::after,
+.InfoButton:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+.LessionButton img,
+.AIButton img,
+.PuzzleButton img,
+.OnlineButton img,
+.InfoButton img {
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.LessionButton span,
+.AIButton span,
+.PuzzleButton span,
+.OnlineButton span,
+.InfoButton span {
+  font-size: inherit;
+}
+
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes box {
+    0% {
+      box-shadow: #27272c;
+    }
+    50% {
+      box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+      box-shadow: #27272c;
+    }
+  }
+  

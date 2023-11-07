@@ -1,0 +1,46 @@
+/* Game.css */
+
+/* Styles for the main container */
+.game-container {
+    margin-top: 20px;
+    padding-left: 30%;
+    height: 140%;
+  }
+  
+  /* Styles for the board container */
+  .board-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+  }
+  
+  /* Styles for the chessboard */
+  .chessboard {
+    max-width: 600px;
+    max-height: 600px;
+    flex-grow: 1;
+  }
+  
+  /* Styles for the players list container */
+  .players-container {
+    margin-left: 20px;
+  }
+  
+  /* Styles for the players list header */
+  .players-header {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Styles for the players list */
+  .players-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Styles for each player item */
+  .player-item {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  

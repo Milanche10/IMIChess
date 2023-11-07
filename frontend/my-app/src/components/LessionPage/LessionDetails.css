@@ -1,0 +1,78 @@
+/* LessonDetails component container */
+.lesson-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Lesson image */
+.lesson-details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative; /* Add position: relative to create a positioning context */
+}
+
+/* Lesson title */
+.lesson-details h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #A3ADB2;
+}
+
+/* Lesson description */
+.lesson-details p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #777;
+}
+
+
+
+/* Sublesson container */
+.sublesson-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Video container */
+.video {
+  flex: 0 0 120px; /* Fixed width for video */
+  margin-right: 20px;
+}
+.duration-play {
+  display: flex;
+}
+/* Play button icon */
+.play-button {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+/* Sublesson content */
+.sublesson-content {
+  flex-grow: 1; /* Allow content to grow and fill remaining space */
+  color: #777;
+}
+
+/* Sublesson title */
+.sublesson-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #A3ADB2;
+}
+
+/* Sublesson description */
+.sublesson-content p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #777;
+}
+
+/* Duration */
+.sublesson-content span {
+  font-weight: bold;
+}

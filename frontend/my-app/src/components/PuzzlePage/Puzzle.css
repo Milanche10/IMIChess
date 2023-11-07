@@ -1,0 +1,73 @@
+
+
+
+/* Puzzle.css */
+
+
+.puzzleBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #27272c;
+    padding: 3%;
+    margin-left: 10%;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 2% 4% 4% 4%;
+    width: 80%;
+    height: 50%;
+    overflow: hidden;
+}
+  
+
+/*
+.chess-board {
+  max-width: 100%; 
+  width: 200px;
+  height: 100px;
+  border: 2px solid #333;
+}
+*/
+.chessboard-container {
+  max-width: 100%; /* Make the container responsive */
+  width: 80%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio if needed */
+  /* Add any other styles you want */
+}
+
+  
+/* Styles for the "Next" button */
+.nextBtn {
+  position: inline-block;
+  background-color: #fff; /* Background color for the close button */
+  color: #333; /* Text color */
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nextBtn:hover {
+  background-color: #eee; /* Background color on hover */
+  color: #555; /* Text color on hover */
+}
+
+
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .chess-board {
+      width: 100%; /* Use full width for smaller screens */
+      max-width: none; /* Remove the max-width */
+    }
+    .nextBtn {
+      width: 100%; /* Use full width for smaller screens */
+    }
+  }
+  

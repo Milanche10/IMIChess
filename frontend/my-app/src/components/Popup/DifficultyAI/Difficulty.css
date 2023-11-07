@@ -1,0 +1,191 @@
+
+.Easy {
+    --clr: #39FF14;
+}
+.Normal {
+    --clr: #E7EE4F;
+}
+.Hard {
+    --clr: #dd0a3f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .popup-inner{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    
+  } 
+
+  /* Difficulty.css */
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #fff; /* Background color for the close button */
+  color: #333; /* Text color */
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+  background-color: #eee; /* Background color on hover */
+  color: #555; /* Text color on hover */
+}
+
+  
+
+
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if they don't fit horizontally */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 1rem;
+  }
+  
+
+  
+  .Hard,
+  .Normal, 
+  .Easy {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+  }
+  
+  .Hard:hover, 
+  .Normal:hover, 
+  .Easy:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+  }
+  
+  .Hard::before, .Normal::before, .Easy::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+  }
+  
+  .Hard span, .Normal span, .Easy span {
+    position: relative;
+    z-index: 1;
+  }
+  .Hard i, .Normal i, .Easy i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  .Hard i::before,
+  .Normal i::before,
+  .Easy i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  
+  .Hard:hover i::before, 
+  .Normal:hover i::before, 
+  .Easy:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+  }
+  
+  .Hard i::after, 
+  .Normal i::after, 
+  .Easy i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+  }
+  
+  .Hard:hover i::after, 
+  .Normal:hover i::after, 
+  .Easy:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes box {
+    0% {
+      box-shadow: #27272c;
+    }
+    50% {
+      box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+      box-shadow: #27272c;
+    }
+  }
